@@ -1,34 +1,14 @@
-#UC6
-#Ability to Retrieve Person belonging to a City or State from the Address Book
-#query:-
-#1)Retrive contact using city 
-SELECT 
-    *
-FROM
-    address_book
-WHERE
-    city = 'pune';
-    #2)Retrive contact using city
-SELECT 
-    *
-FROM
-    address_book
-WHERE
-    city = 'Anagar';
-    
-	#3)Retrive contact using city
-SELECT 
-    *
-FROM
-    address_book
-WHERE
-    city = 'amravati';
+#uc7
+#Ability to understand the size of address book by City and State
 
-#4)Retrive contact using state
+#size of address book by city
 SELECT 
-    *
+    COUNT(city) AS NumberOfaddress_book
 FROM
-    address_book
-WHERE
-    state = 'maharastra';
+    address_book;
 
+#size of address book by city
+SELECT 
+    COUNT(state) AS NumberOfaddress_book
+FROM
+    address_book;
